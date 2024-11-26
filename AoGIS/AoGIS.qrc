@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/AoGIS">
+        <file>res/raster.png</file>
+        <file>res/rasterAnalysis.png</file>
+        <file>res/rasterLayerStatistics.png</file>
+        <file>res/saveFile.png</file>
+        <file>res/text.png</file>
+        <file>res/vector.png</file>
+        <file>res/vectorAnalysis.png</file>
+        <file>res/vectorGenerality.png</file>
+        <file>res/KAlgorithm.png</file>
+        <file>res/locationLinkProperty.png</file>
+        <file>res/openFile.png</file>
+        <file>res/AoGIS.png</file>
+    </qresource>
+</RCC>

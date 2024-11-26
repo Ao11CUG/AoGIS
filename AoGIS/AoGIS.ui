@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AoGISClass</class>
+ <widget class="QMainWindow" name="AoGISClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1200</width>
+    <height>900</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>AoGIS</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QDockWidget" name="leftDock">
+      <property name="minimumSize">
+       <size>
+        <width>189</width>
+        <height>159</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>250</width>
+        <height>524287</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 255, 255);</string>
+      </property>
+      <widget class="QWidget" name="dockWidgetContents_3">
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QListView" name="listView">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="deleteButton">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Delete</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="viewVectorLayerAttributes">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>View Attributes</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>400</height>
+       </size>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>668</width>
+         <height>589</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QDockWidget" name="rightDock">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>200</width>
+        <height>256</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>250</width>
+        <height>524287</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 255, 255);</string>
+      </property>
+      <property name="floating">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="dockWidgetContents_4">
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QTabWidget" name="tabWidget">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="tabPosition">
+           <enum>QTabWidget::TabPosition::North</enum>
+          </property>
+          <property name="currentIndex">
+           <number>1</number>
+          </property>
+          <widget class="QWidget" name="rasterTab">
+           <attribute name="icon">
+            <iconset resource="AoGIS.qrc">
+             <normaloff>:/AoGIS/res/raster.png</normaloff>:/AoGIS/res/raster.png</iconset>
+           </attribute>
+           <attribute name="title">
+            <string>栅格</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_6">
+            <item>
+             <widget class="QTabWidget" name="rasterTabInside">
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <widget class="QWidget" name="rasterAnalysisTab">
+               <attribute name="icon">
+                <iconset resource="AoGIS.qrc">
+                 <normaloff>:/AoGIS/res/rasterAnalysis.png</normaloff>:/AoGIS/res/rasterAnalysis.png</iconset>
+               </attribute>
+               <attribute name="title">
+                <string>栅格分析</string>
+               </attribute>
+               <widget class="QPushButton" name="rasterLayerStatisticsButton">
+                <property name="geometry">
+                 <rect>
+                  <x>6</x>
+                  <y>10</y>
+                  <width>201</width>
+                  <height>25</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>栅格图层统计</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="AoGIS.qrc">
+                  <normaloff>:/AoGIS/res/rasterLayerStatistics.png</normaloff>:/AoGIS/res/rasterLayerStatistics.png</iconset>
+                </property>
+               </widget>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="vectorTab">
+           <attribute name="icon">
+            <iconset resource="AoGIS.qrc">
+             <normaloff>:/AoGIS/res/vector.png</normaloff>:/AoGIS/res/vector.png</iconset>
+           </attribute>
+           <attribute name="title">
+            <string>矢量</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_7">
+            <item>
+             <widget class="QTabWidget" name="vectorTabInside">
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <widget class="QWidget" name="vectorAnalysisTab">
+               <attribute name="icon">
+                <iconset resource="AoGIS.qrc">
+                 <normaloff>:/AoGIS/res/vectorAnalysis.png</normaloff>:/AoGIS/res/vectorAnalysis.png</iconset>
+               </attribute>
+               <attribute name="title">
+                <string>矢量分析</string>
+               </attribute>
+               <widget class="QPushButton" name="KAlgorithmButton">
+                <property name="geometry">
+                 <rect>
+                  <x>6</x>
+                  <y>10</y>
+                  <width>201</width>
+                  <height>25</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>K均值聚类算法分析</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="AoGIS.qrc">
+                  <normaloff>:/AoGIS/res/KAlgorithm.png</normaloff>:/AoGIS/res/KAlgorithm.png</iconset>
+                </property>
+               </widget>
+              </widget>
+              <widget class="QWidget" name="vectorGeneralityTab">
+               <attribute name="icon">
+                <iconset resource="AoGIS.qrc">
+                 <normaloff>:/AoGIS/res/vectorGenerality.png</normaloff>:/AoGIS/res/vectorGenerality.png</iconset>
+               </attribute>
+               <attribute name="title">
+                <string>矢量通用</string>
+               </attribute>
+               <widget class="QPushButton" name="locationLinkPropertyButton">
+                <property name="geometry">
+                 <rect>
+                  <x>6</x>
+                  <y>10</y>
+                  <width>201</width>
+                  <height>25</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>按位置连接属性</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="AoGIS.qrc">
+                  <normaloff>:/AoGIS/res/locationLinkProperty.png</normaloff>:/AoGIS/res/locationLinkProperty.png</iconset>
+                </property>
+               </widget>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 255, 255);</string>
+   </property>
+   <widget class="QMenu" name="file">
+    <property name="title">
+     <string>     文件     </string>
+    </property>
+    <widget class="QMenu" name="openFile">
+     <property name="title">
+      <string>打开</string>
+     </property>
+     <property name="icon">
+      <iconset resource="AoGIS.qrc">
+       <normaloff>:/AoGIS/res/openFile.png</normaloff>:/AoGIS/res/openFile.png</iconset>
+     </property>
+     <addaction name="openVector"/>
+     <addaction name="openRaster"/>
+     <addaction name="openText"/>
+    </widget>
+    <addaction name="openFile"/>
+    <addaction name="saveFile"/>
+   </widget>
+   <widget class="QMenu" name="windows">
+    <property name="title">
+     <string>     窗口     </string>
+    </property>
+    <addaction name="openLayerManagement"/>
+    <addaction name="openToolBox"/>
+    <addaction name="openLog"/>
+   </widget>
+   <widget class="QMenu" name="raster">
+    <property name="title">
+     <string>     栅格     </string>
+    </property>
+    <widget class="QMenu" name="rasterAnalysis">
+     <property name="title">
+      <string>栅格分析</string>
+     </property>
+     <property name="icon">
+      <iconset resource="AoGIS.qrc">
+       <normaloff>:/AoGIS/res/rasterAnalysis.png</normaloff>:/AoGIS/res/rasterAnalysis.png</iconset>
+     </property>
+     <addaction name="rasterLayerStatistics"/>
+    </widget>
+    <addaction name="rasterAnalysis"/>
+   </widget>
+   <widget class="QMenu" name="vector">
+    <property name="title">
+     <string>     矢量     </string>
+    </property>
+    <widget class="QMenu" name="vectorAnalysis">
+     <property name="title">
+      <string>矢量分析</string>
+     </property>
+     <property name="icon">
+      <iconset resource="AoGIS.qrc">
+       <normaloff>:/AoGIS/res/vectorAnalysis.png</normaloff>:/AoGIS/res/vectorAnalysis.png</iconset>
+     </property>
+     <addaction name="KAlgorithmAnalysis"/>
+    </widget>
+    <widget class="QMenu" name="vectorGenerality">
+     <property name="title">
+      <string>矢量通用</string>
+     </property>
+     <property name="icon">
+      <iconset resource="AoGIS.qrc">
+       <normaloff>:/AoGIS/res/vectorGenerality.png</normaloff>:/AoGIS/res/vectorGenerality.png</iconset>
+     </property>
+     <addaction name="locationLinkProperty"/>
+    </widget>
+    <addaction name="vectorAnalysis"/>
+    <addaction name="vectorGenerality"/>
+   </widget>
+   <addaction name="file"/>
+   <addaction name="windows"/>
+   <addaction name="raster"/>
+   <addaction name="vector"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(170, 255, 255);</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="openVector"/>
+   <addaction name="openRaster"/>
+   <addaction name="openText"/>
+   <addaction name="saveFile"/>
+   <addaction name="separator"/>
+  </widget>
+  <widget class="QDockWidget" name="bottomDock">
+   <property name="minimumSize">
+    <size>
+     <width>79</width>
+     <height>150</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>524287</width>
+     <height>200</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 255, 255);</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>8</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_7">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QTextEdit" name="log">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="saveFile">
+   <property name="icon">
+    <iconset resource="AoGIS.qrc">
+     <normaloff>:/AoGIS/res/saveFile.png</normaloff>:/AoGIS/res/saveFile.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </action>
+  <action name="openVector">
+   <property name="icon">
+    <iconset resource="AoGIS.qrc">
+     <normaloff>:/AoGIS/res/vector.png</normaloff>:/AoGIS/res/vector.png</iconset>
+   </property>
+   <property name="text">
+    <string>添加矢量图层</string>
+   </property>
+  </action>
+  <action name="openRaster">
+   <property name="icon">
+    <iconset resource="AoGIS.qrc">
+     <normaloff>:/AoGIS/res/raster.png</normaloff>:/AoGIS/res/raster.png</iconset>
+   </property>
+   <property name="text">
+    <string>添加栅格图层</string>
+   </property>
+  </action>
+  <action name="openText">
+   <property name="icon">
+    <iconset resource="AoGIS.qrc">
+     <normaloff>:/AoGIS/res/text.png</normaloff>:/AoGIS/res/text.png</iconset>
+   </property>
+   <property name="text">
+    <string>添加分隔符文本图层</string>
+   </property>
+  </action>
+  <action name="openLayerManagement">
+   <property name="text">
+    <string>打开图层管理器</string>
+   </property>
+  </action>
+  <action name="openToolBox">
+   <property name="text">
+    <string>打开工具箱</string>
+   </property>
+  </action>
+  <action name="openLog">
+   <property name="text">
+    <string>打开程序执行日志</string>
+   </property>
+  </action>
+  <action name="rasterLayerStatistics">
+   <property name="icon">
+    <iconset resource="AoGIS.qrc">
+     <normaloff>:/AoGIS/res/rasterLayerStatistics.png</normaloff>:/AoGIS/res/rasterLayerStatistics.png</iconset>
+   </property>
+   <property name="text">
+    <string>栅格图层统计</string>
+   </property>
+  </action>
+  <action name="KAlgorithmAnalysis">
+   <property name="icon">
+    <iconset resource="AoGIS.qrc">
+     <normaloff>:/AoGIS/res/KAlgorithm.png</normaloff>:/AoGIS/res/KAlgorithm.png</iconset>
+   </property>
+   <property name="text">
+    <string>K均值聚类算法分析</string>
+   </property>
+  </action>
+  <action name="locationLinkProperty">
+   <property name="icon">
+    <iconset resource="AoGIS.qrc">
+     <normaloff>:/AoGIS/res/locationLinkProperty.png</normaloff>:/AoGIS/res/locationLinkProperty.png</iconset>
+   </property>
+   <property name="text">
+    <string>按位置连接属性</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="AoGIS.qrc"/>
+  <include location="AoGIS.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>locationLinkPropertyClass</class>
+ <widget class="QWidget" name="locationLinkPropertyClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>locationLinkProperty</string>
+  </property>
+  <widget class="QLineEdit" name="vectorFileInput">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>40</y>
+     <width>300</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+   <property name="placeholderText">
+    <string>输入矢量：</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="poiFileInput">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>110</y>
+     <width>300</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+   <property name="placeholderText">
+    <string>输入矢量(POI）：</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="vectorFileOutput">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>180</y>
+     <width>300</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+   <property name="placeholderText">
+    <string>输出矢量：</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="openVectorFile">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>40</y>
+     <width>40</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="AoGIS.qrc">
+     <normaloff>:/AoGIS/res/openFile.png</normaloff>:/AoGIS/res/openFile.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="openPoiFile">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>110</y>
+     <width>40</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="AoGIS.qrc">
+     <normaloff>:/AoGIS/res/openFile.png</normaloff>:/AoGIS/res/openFile.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="saveVectorFile">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>180</y>
+     <width>40</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="AoGIS.qrc">
+     <normaloff>:/AoGIS/res/saveFile.png</normaloff>:/AoGIS/res/saveFile.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="begin">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>260</y>
+     <width>100</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>开始</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="AoGIS.qrc"/>
+ </resources>
+ <connections/>
+</ui>
